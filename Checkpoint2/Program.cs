@@ -5,7 +5,9 @@ List<Product> products = new List<Product>();
 
 while (true)
 {
+    Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine("To enter a new product - follow the steps | To quit - type: 'Q'");
+    Console.ResetColor();
 
     Console.Write("Enter Category: ");
     string category = Console.ReadLine(); //Takes user input and saves it in variable 'category'.
@@ -22,7 +24,10 @@ while (true)
     double price = Convert.ToDouble(Console.ReadLine()); //Takes user input and saves it in variable 'price'.
 
     products.Add(new Product(category, productName, price)); // Creates a new instance of the Product class with the user inputs, then adds it to list 'products'.
+
+    Console.ForegroundColor = ConsoleColor.Green;
     Console.WriteLine("The product was successfully added!");
+    Console.ResetColor();
     Console.WriteLine("-----------------------------------------");
 }
 
