@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Checkpoint2
 {
-    class ProductPrice
+    class ProductCategory
     {
-        public ProductPrice(double price)
+        public ProductCategory(string category)
         {
-            Price = price;
+            Category = category;
         }
-
-        public double Price { get; set; }
+        public string Category { get; set; }
     }
 }
